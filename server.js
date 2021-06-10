@@ -1,7 +1,8 @@
 const exp = require('express')
 const { success, error } = require('consola')
+const dotenv = require('dotenv')
 
-require('dotenv').config({ path: 'config.env' })
+dotenv.config()
 
 const app = exp()
 app.set('view engine', 'ejs')
