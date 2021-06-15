@@ -8,9 +8,9 @@ const app = exp()
 app.set('view engine', 'ejs')
 app.use(exp.static('public'))
 
-const PORT = 3000 || process.env.PORT
+const PORT = process.env.PORT || 3000
 
-// Get 
+// Get '/'
 app.use('/', require('./routes/index'))
 
 app.listen(PORT, (err) => {
